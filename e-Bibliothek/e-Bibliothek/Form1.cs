@@ -21,5 +21,27 @@ namespace e_Bibliothek
         {
 
         }
+
+        private void bLogin_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Passwort oder Benutzername falsch");
+        }
+
+        private void bRegistrieren_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 f2 = new Form2();
+            f2.Show();
+        }
+
+        private void bKatalog_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bPasswdV_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

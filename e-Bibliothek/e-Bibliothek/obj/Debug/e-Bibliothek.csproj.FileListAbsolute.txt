@@ -1,0 +1,11 @@
+C:\Users\timos\Source\Repos\TimoStrolz\eBibliothek\e-Bibliothek\e-Bibliothek\bin\Debug\e-Bibliothek.exe.config
+C:\Users\timos\Source\Repos\TimoStrolz\eBibliothek\e-Bibliothek\e-Bibliothek\bin\Debug\e-Bibliothek.exe
+C:\Users\timos\Source\Repos\TimoStrolz\eBibliothek\e-Bibliothek\e-Bibliothek\bin\Debug\e-Bibliothek.pdb
+C:\Users\timos\Source\Repos\TimoStrolz\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csprojAssemblyReference.cache
+C:\Users\timos\Source\Repos\TimoStrolz\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.Form1.resources
+C:\Users\timos\Source\Repos\TimoStrolz\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.Properties.Resources.resources
+C:\Users\timos\Source\Repos\TimoStrolz\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csproj.GenerateResource.cache
+C:\Users\timos\Source\Repos\TimoStrolz\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csproj.CoreCompileInputs.cache
+C:\Users\timos\Source\Repos\TimoStrolz\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.exe
+C:\Users\timos\Source\Repos\TimoStrolz\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.pdb
+C:\Users\timos\Source\Repos\TimoStrolz\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.Form2.resources
