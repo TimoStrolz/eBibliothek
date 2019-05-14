@@ -22,3 +22,4 @@ C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_B
 C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\bin\Debug\Database1.mdf
 C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\bin\Debug\Database1_log.ldf
 C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.FormTest.resources
+C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csprojAssemblyReference.cache
