@@ -1,6 +1,6 @@
 ﻿namespace e_Bibliothek
 {
-    partial class Form2
+    partial class Registration
     {
         /// <summary>
         /// Required designer variable.
@@ -28,43 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tBEmail = new System.Windows.Forms.TextBox();
+            this.tBPasswort1 = new System.Windows.Forms.TextBox();
+            this.tBPasswort2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.bWeiter = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tBAdresse = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tBEmail
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 0;
+            this.tBEmail.Location = new System.Drawing.Point(12, 39);
+            this.tBEmail.Name = "tBEmail";
+            this.tBEmail.Size = new System.Drawing.Size(100, 26);
+            this.tBEmail.TabIndex = 6;
+            this.tBEmail.TextChanged += new System.EventHandler(this.tBEmail_TextChanged);
             // 
-            // textBox2
+            // tBPasswort1
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 118);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
-            this.textBox2.TabIndex = 1;
+            this.tBPasswort1.Location = new System.Drawing.Point(12, 118);
+            this.tBPasswort1.Name = "tBPasswort1";
+            this.tBPasswort1.PasswordChar = '*';
+            this.tBPasswort1.Size = new System.Drawing.Size(100, 26);
+            this.tBPasswort1.TabIndex = 1;
             // 
-            // textBox3
+            // tBPasswort2
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 170);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 26);
-            this.textBox3.TabIndex = 2;
+            this.tBPasswort2.Location = new System.Drawing.Point(12, 170);
+            this.tBPasswort2.Name = "tBPasswort2";
+            this.tBPasswort2.PasswordChar = '*';
+            this.tBPasswort2.Size = new System.Drawing.Size(100, 26);
+            this.tBPasswort2.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 13);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 20);
+            this.label1.Size = new System.Drawing.Size(112, 20);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Benutzername";
+            this.label1.Text = "Email-Adresse";
             // 
             // label2
             // 
@@ -84,19 +92,68 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Passwort eingeben";
             // 
-            // Form2
+            // bWeiter
+            // 
+            this.bWeiter.Location = new System.Drawing.Point(12, 202);
+            this.bWeiter.Name = "bWeiter";
+            this.bWeiter.Size = new System.Drawing.Size(75, 38);
+            this.bWeiter.TabIndex = 7;
+            this.bWeiter.Text = "weiter";
+            this.bWeiter.UseVisualStyleBackColor = true;
+            this.bWeiter.Click += new System.EventHandler(this.bWeiter_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(218, 95);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 20);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Adresse";
+            // 
+            // tBAdresse
+            // 
+            this.tBAdresse.Location = new System.Drawing.Point(222, 118);
+            this.tBAdresse.Name = "tBAdresse";
+            this.tBAdresse.PasswordChar = '*';
+            this.tBAdresse.Size = new System.Drawing.Size(100, 26);
+            this.tBAdresse.TabIndex = 8;
+            this.tBAdresse.TextChanged += new System.EventHandler(this.tBAdresse_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(218, 147);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(112, 20);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Geburtsdatum";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(222, 170);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePicker1.TabIndex = 12;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(497, 342);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.tBAdresse);
+            this.Controls.Add(this.bWeiter);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Controls.Add(this.tBPasswort2);
+            this.Controls.Add(this.tBPasswort1);
+            this.Controls.Add(this.tBEmail);
+            this.Name = "Registration";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -105,11 +162,16 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tBEmail;
+        private System.Windows.Forms.TextBox tBPasswort1;
+        private System.Windows.Forms.TextBox tBPasswort2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button bWeiter;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tBAdresse;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

@@ -12,6 +12,7 @@ namespace e_Bibliothek
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -30,18 +31,24 @@ namespace e_Bibliothek
         private void bRegistrieren_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 f2 = new Form2();
+            Registration f2 = new Registration();
             f2.Show();
         }
 
         private void bKatalog_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Catalog f3 = new Catalog();
+            f3.Show();
         }
 
         private void bPasswdV_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            NewPassWd f4 = new NewPassWd();
+            f4.Show();
         }
     }
+
+
 }
