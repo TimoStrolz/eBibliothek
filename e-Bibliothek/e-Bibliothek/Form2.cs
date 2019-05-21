@@ -55,14 +55,10 @@ namespace e_Bibliothek
             SqlConnection connection;
             SqlCommand command;
             string sql = null;
-            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\Database1.mdf;Integrated Security=True";
-            string benutzername = tBEmail.Text;
-            string passwd = tBPasswort1.Text;
-            DateTime bdate = dateTimePicker1.Value;
-            string adresse = tBAdresse.Text;
+            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\Database1.mdf;Integrated Security=True";
             // Create a new Benutzer object.
             Benutzer b1 = new Benutzer(tBEmail.Text, tBPasswort1.Text, dateTimePicker1.Value, tBAdresse.Text);
-            sql = String.Format("INSERT INTO Benutzer (Id, BenutzerName, PassWd, BDate, Adresse) VALUES(0, '{0}', '{1}', '{2}', '{3}'); ", b1.BenutzerName, b1.PassWD, b1.BDate, b1.Adresse);
+            sql = String.Format("INSERT INTO Benutzer (BenutzerName, PassWd, BDate, Adresse) VALUES('{0}', '{1}', '{2}', '{3}'); ", b1.BenutzerName, b1.PassWD, b1.BDate, b1.Adresse);
             connection = new SqlConnection(connetionString);
             
             try
