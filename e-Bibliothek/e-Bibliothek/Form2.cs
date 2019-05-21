@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -50,14 +51,28 @@ namespace e_Bibliothek
                 MessageBox.Show("Passwörter stimmen nicht überrein.");
                 return;
             }
-
+            //password hashing with salt
+            //create salt and crypto prng
+            byte[] salt;
+            new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
+            //create rfcderiveBytes and get hashing value
+            var pbkdf2 = new Rfc2898DeriveBytes(tBPasswort2.Text, salt, 10000);
+            byte[] hash = pbkdf2.GetBytes(20);
+            //combine salt and password fo use later
+            byte[] hashBytes = new byte[36];
+            Array.Copy(salt, 0, hashBytes, 0, 16);
+            Array.Copy(hash, 0, hashBytes, 16, 20);
+            //tun into string for storage
+            string savedPasswordHash = Convert.ToBase64String(hashBytes);
+            //sql connection and insert into
             string connetionString = null;
             SqlConnection connection;
             SqlCommand command;
             string sql = null;
             connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\Database1.mdf;Integrated Security=True";
             // Create a new Benutzer object.
-            Benutzer b1 = new Benutzer(tBEmail.Text, tBPasswort1.Text, dateTimePicker1.Value, tBAdresse.Text);
+            Benutzer b1 = new Benutzer(tBEmail.Text, savedPasswordHash, dateTimePicker1.Value, tBAdresse.Text);
+            //format date
             string sqlFormattedDate = b1.BDate.ToString("yyyy-MM-dd HH:mm:ss.fff");
             sql = String.Format("INSERT INTO Benutzer (BenutzerName, PassWd, BDate, Adresse) VALUES('{0}', '{1}', '{2}', '{3}'); ", b1.BenutzerName, b1.PassWD, sqlFormattedDate, b1.Adresse);
             connection = new SqlConnection(connetionString);
