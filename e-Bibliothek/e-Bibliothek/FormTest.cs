@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -18,30 +17,11 @@ namespace e_Bibliothek
             InitializeComponent();
         }
 
-        void FillData()
+        private void FormTest_Load(object sender, EventArgs e)
         {
-            // 1
-            // Open connection
-            string connetionString = null;
-            SqlConnection connection;
-            SqlCommand command;
-            string sql = null;
-            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\Database1.mdf;Integrated Security=True";
-            sql =  "SELECT * FROM Benutzer";
-            connection = new SqlConnection(connetionString);
-            connection.Open();
+            // TODO: Diese Codezeile lädt Daten in die Tabelle "database1DataSet.Benutzer". Sie können sie bei Bedarf verschieben oder entfernen.
+            this.benutzerTableAdapter.Fill(this.database1DataSet.Benutzer);
 
-
-            SqlDataAdapter a = new SqlDataAdapter();
-            DataGridView dataGridView1 = new DataGridView();
-            DataTable t = new DataTable();
-            a.Fill(t);
-
-           dataGridView1.DataSource = t;
-                
-            
         }
-
-
     }
 }
