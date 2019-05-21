@@ -58,7 +58,8 @@ namespace e_Bibliothek
             connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\Database1.mdf;Integrated Security=True";
             // Create a new Benutzer object.
             Benutzer b1 = new Benutzer(tBEmail.Text, tBPasswort1.Text, dateTimePicker1.Value, tBAdresse.Text);
-            sql = String.Format("INSERT INTO Benutzer (BenutzerName, PassWd, BDate, Adresse) VALUES('{0}', '{1}', '{2}', '{3}'); ", b1.BenutzerName, b1.PassWD, b1.BDate, b1.Adresse);
+            string sqlFormattedDate = b1.BDate.ToString("yyyy-MM-dd HH:mm:ss.fff");
+            sql = String.Format("INSERT INTO Benutzer (BenutzerName, PassWd, BDate, Adresse) VALUES('{0}', '{1}', '{2}', '{3}'); ", b1.BenutzerName, b1.PassWD, sqlFormattedDate, b1.Adresse);
             connection = new SqlConnection(connetionString);
             
             try
