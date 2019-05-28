@@ -12,7 +12,6 @@ C:\Users\timos\Source\Repos\TimoStrolz\eBibliothek\e-Bibliothek\e-Bibliothek\obj
 C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\bin\Debug\e-Bibliothek.exe.config
 C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\bin\Debug\e-Bibliothek.exe
 C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\bin\Debug\e-Bibliothek.pdb
-C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.Form1.resources
 C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.Properties.Resources.resources
 C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csproj.GenerateResource.cache
 C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csproj.CoreCompileInputs.cache
@@ -21,7 +20,6 @@ C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e-B
 C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.Registration.resources
 C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\bin\Debug\Database1.mdf
 C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\bin\Debug\Database1_log.ldf
-C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.FormTest.resources
 C:\Users\domin\OneDrive\Dokumente\GitHub\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csprojAssemblyReference.cache
 C:\Users\domin\OneDrive\Dokumente\GitHub\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.Form1.resources
 C:\Users\domin\OneDrive\Dokumente\GitHub\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.Registration.resources
@@ -30,4 +28,6 @@ C:\Users\domin\OneDrive\Dokumente\GitHub\eBibliothek\e-Bibliothek\e-Bibliothek\o
 C:\Users\domin\OneDrive\Dokumente\GitHub\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csproj.GenerateResource.cache
 C:\Users\domin\OneDrive\Dokumente\GitHub\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csproj.CoreCompileInputs.cache
 =======
+C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.LoginForm.resources
 C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csprojAssemblyReference.cache
+C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.LobbyForm.resources
