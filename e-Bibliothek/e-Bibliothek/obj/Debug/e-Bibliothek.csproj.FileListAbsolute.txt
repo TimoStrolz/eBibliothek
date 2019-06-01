@@ -23,7 +23,6 @@ C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\bin\Debug\Dat
 <<<<<<< HEAD
 =======
 C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.FormTest.resources
-<<<<<<< HEAD
 >>>>>>> fd067b73106055db03d7395fdb7082da0ae30eb9
 C:\Users\domin\OneDrive\Dokumente\GitHub\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csprojAssemblyReference.cache
 C:\Users\domin\OneDrive\Dokumente\GitHub\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.Form1.resources
@@ -32,12 +31,7 @@ C:\Users\domin\OneDrive\Dokumente\GitHub\eBibliothek\e-Bibliothek\e-Bibliothek\o
 C:\Users\domin\OneDrive\Dokumente\GitHub\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.Properties.Resources.resources
 C:\Users\domin\OneDrive\Dokumente\GitHub\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csproj.GenerateResource.cache
 C:\Users\domin\OneDrive\Dokumente\GitHub\eBibliothek\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csproj.CoreCompileInputs.cache
-=======
-<<<<<<< HEAD
 C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.LoginForm.resources
 C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csprojAssemblyReference.cache
 C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.LobbyForm.resources
-=======
-C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csprojAssemblyReference.cache
 >>>>>>> 698b5e38a603c76ec7117718fd21c874cbc84eb4
->>>>>>> fd067b73106055db03d7395fdb7082da0ae30eb9

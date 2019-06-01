@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Catalog
+            // LobbyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Catalog";
-            this.Text = "Form3";
+            this.Name = "LobbyForm";
+            this.Text = "Lobby";
             this.Load += new System.EventHandler(this.Catalog_Load);
             this.ResumeLayout(false);
 
