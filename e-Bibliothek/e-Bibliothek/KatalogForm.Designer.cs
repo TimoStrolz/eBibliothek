@@ -194,8 +194,9 @@
             this.seitenDataGridViewTextBoxColumn,
             this.verfügbarkeitDataGridViewTextBoxColumn});
             this.dataGridViewBücher.DataSource = this.bücherBindingSource;
-            this.dataGridViewBücher.Location = new System.Drawing.Point(13, 12);
+            this.dataGridViewBücher.Location = new System.Drawing.Point(1, -6);
             this.dataGridViewBücher.Name = "dataGridViewBücher";
+            this.dataGridViewBücher.ReadOnly = true;
             this.dataGridViewBücher.RowTemplate.Height = 28;
             this.dataGridViewBücher.Size = new System.Drawing.Size(910, 639);
             this.dataGridViewBücher.TabIndex = 5;
@@ -248,8 +249,9 @@
             this.erscheinungshäufigkeitDataGridViewTextBoxColumn,
             this.verfügbarkeitDataGridViewTextBoxColumn1});
             this.dataGridViewZeitungen.DataSource = this.zeitungenBindingSource;
-            this.dataGridViewZeitungen.Location = new System.Drawing.Point(13, 12);
+            this.dataGridViewZeitungen.Location = new System.Drawing.Point(2, 3);
             this.dataGridViewZeitungen.Name = "dataGridViewZeitungen";
+            this.dataGridViewZeitungen.ReadOnly = true;
             this.dataGridViewZeitungen.RowTemplate.Height = 28;
             this.dataGridViewZeitungen.Size = new System.Drawing.Size(910, 639);
             this.dataGridViewZeitungen.TabIndex = 6;
@@ -300,11 +302,13 @@
             this.mindestalterDataGridViewTextBoxColumn,
             this.verfügbarkeitDataGridViewTextBoxColumn2});
             this.dataGridViewKSpiele.DataSource = this.konsolenspieleBindingSource;
-            this.dataGridViewKSpiele.Location = new System.Drawing.Point(12, 12);
+            this.dataGridViewKSpiele.Location = new System.Drawing.Point(1, 3);
             this.dataGridViewKSpiele.Name = "dataGridViewKSpiele";
+            this.dataGridViewKSpiele.ReadOnly = true;
             this.dataGridViewKSpiele.RowTemplate.Height = 28;
             this.dataGridViewKSpiele.Size = new System.Drawing.Size(911, 639);
             this.dataGridViewKSpiele.TabIndex = 7;
+            this.dataGridViewKSpiele.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewKSpiele_CellContentClick);
             // 
             // titelDataGridViewTextBoxColumn2
             // 
@@ -332,6 +336,8 @@
             // 
             // dataGridViewDVDs
             // 
+            this.dataGridViewDVDs.AllowUserToAddRows = false;
+            this.dataGridViewDVDs.AllowUserToDeleteRows = false;
             this.dataGridViewDVDs.AutoGenerateColumns = false;
             this.dataGridViewDVDs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDVDs.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -341,8 +347,9 @@
             this.mindestalterDataGridViewTextBoxColumn1,
             this.verfügbarkeitDataGridViewTextBoxColumn3});
             this.dataGridViewDVDs.DataSource = this.dVDsBindingSource;
-            this.dataGridViewDVDs.Location = new System.Drawing.Point(13, 12);
+            this.dataGridViewDVDs.Location = new System.Drawing.Point(2, 3);
             this.dataGridViewDVDs.Name = "dataGridViewDVDs";
+            this.dataGridViewDVDs.ReadOnly = true;
             this.dataGridViewDVDs.RowTemplate.Height = 28;
             this.dataGridViewDVDs.Size = new System.Drawing.Size(910, 639);
             this.dataGridViewDVDs.TabIndex = 8;
@@ -352,30 +359,35 @@
             this.titelDataGridViewTextBoxColumn3.DataPropertyName = "titel";
             this.titelDataGridViewTextBoxColumn3.HeaderText = "titel";
             this.titelDataGridViewTextBoxColumn3.Name = "titelDataGridViewTextBoxColumn3";
+            this.titelDataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // artDataGridViewTextBoxColumn2
             // 
             this.artDataGridViewTextBoxColumn2.DataPropertyName = "art";
             this.artDataGridViewTextBoxColumn2.HeaderText = "art";
             this.artDataGridViewTextBoxColumn2.Name = "artDataGridViewTextBoxColumn2";
+            this.artDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // laufzeitDataGridViewTextBoxColumn
             // 
             this.laufzeitDataGridViewTextBoxColumn.DataPropertyName = "laufzeit";
             this.laufzeitDataGridViewTextBoxColumn.HeaderText = "laufzeit";
             this.laufzeitDataGridViewTextBoxColumn.Name = "laufzeitDataGridViewTextBoxColumn";
+            this.laufzeitDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // mindestalterDataGridViewTextBoxColumn1
             // 
             this.mindestalterDataGridViewTextBoxColumn1.DataPropertyName = "mindestalter";
             this.mindestalterDataGridViewTextBoxColumn1.HeaderText = "mindestalter";
             this.mindestalterDataGridViewTextBoxColumn1.Name = "mindestalterDataGridViewTextBoxColumn1";
+            this.mindestalterDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // verfügbarkeitDataGridViewTextBoxColumn3
             // 
             this.verfügbarkeitDataGridViewTextBoxColumn3.DataPropertyName = "verfügbarkeit";
             this.verfügbarkeitDataGridViewTextBoxColumn3.HeaderText = "verfügbarkeit";
             this.verfügbarkeitDataGridViewTextBoxColumn3.Name = "verfügbarkeitDataGridViewTextBoxColumn3";
+            this.verfügbarkeitDataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // btnBack
             // 

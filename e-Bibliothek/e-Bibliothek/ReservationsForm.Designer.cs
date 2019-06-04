@@ -107,6 +107,7 @@
             this.Controls.Add(this.comboBox1);
             this.Name = "ReservationsForm";
             this.Text = "ReservationsForm";
+            this.Load += new System.EventHandler(this.ReservationsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -70,5 +70,10 @@ namespace e_Bibliothek
         {
             this.Hide();
         }
+
+        private void dataGridViewKSpiele_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 } 
