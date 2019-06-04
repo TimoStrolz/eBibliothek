@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.bLogin = new System.Windows.Forms.Button();
             this.bRegistrieren = new System.Windows.Forms.Button();
+            this.btnKatalog = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tBUserN
@@ -89,11 +90,22 @@
             this.bRegistrieren.UseVisualStyleBackColor = true;
             this.bRegistrieren.Click += new System.EventHandler(this.bRegistrieren_Click);
             // 
+            // btnKatalog
+            // 
+            this.btnKatalog.Location = new System.Drawing.Point(146, 63);
+            this.btnKatalog.Name = "btnKatalog";
+            this.btnKatalog.Size = new System.Drawing.Size(145, 32);
+            this.btnKatalog.TabIndex = 6;
+            this.btnKatalog.Text = "Katalog ansehen";
+            this.btnKatalog.UseVisualStyleBackColor = true;
+            this.btnKatalog.Click += new System.EventHandler(this.btnKatalog_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(311, 180);
+            this.Controls.Add(this.btnKatalog);
             this.Controls.Add(this.bRegistrieren);
             this.Controls.Add(this.bLogin);
             this.Controls.Add(this.label2);
@@ -116,6 +128,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button bLogin;
         private System.Windows.Forms.Button bRegistrieren;
+        private System.Windows.Forms.Button btnKatalog;
     }
 }
 

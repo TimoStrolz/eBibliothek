@@ -68,6 +68,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Database1DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSetBücher.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSetBücher.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSetKSpiele.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSetKSpiele.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSetZeitungen.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSetZeitungen.xsd</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +146,50 @@
     </None>
     <None Include="Database1DataSet.xss">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet1.xsc">
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet1.xss">
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSetBücher.xsc">
+      <DependentUpon>Database1DataSetBücher.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSetBücher.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSetBücher.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSetBücher.xss">
+      <DependentUpon>Database1DataSetBücher.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSetKSpiele.xsc">
+      <DependentUpon>Database1DataSetKSpiele.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSetKSpiele.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSetKSpiele.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSetKSpiele.xss">
+      <DependentUpon>Database1DataSetKSpiele.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSetZeitungen.xsc">
+      <DependentUpon>Database1DataSetZeitungen.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSetZeitungen.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSetZeitungen.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSetZeitungen.xss">
+      <DependentUpon>Database1DataSetZeitungen.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

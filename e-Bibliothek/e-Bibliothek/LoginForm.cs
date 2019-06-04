@@ -79,5 +79,12 @@ namespace e_Bibliothek
             Registration f2 = new Registration();
             f2.Show();
         }
+
+        private void btnKatalog_Click(object sender, EventArgs e)
+        {
+            KatalogForm kf = new KatalogForm();
+            kf.Show();
+            this.Hide();
+        }
     }
 }

@@ -43,12 +43,9 @@
             // 
             // tBEmail
             // 
-<<<<<<< HEAD:e-Bibliothek/e-Bibliothek/.Designer.cs
             this.tBEmail.Location = new System.Drawing.Point(12, 38);
-=======
             this.tBEmail.Location = new System.Drawing.Point(8, 25);
             this.tBEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
->>>>>>> fd067b73106055db03d7395fdb7082da0ae30eb9:e-Bibliothek/e-Bibliothek/Form2.Designer.cs
             this.tBEmail.Name = "tBEmail";
             this.tBEmail.Size = new System.Drawing.Size(68, 20);
             this.tBEmail.TabIndex = 6;
@@ -56,12 +53,9 @@
             // 
             // tBPasswort1
             // 
-<<<<<<< HEAD:e-Bibliothek/e-Bibliothek/.Designer.cs
             this.tBPasswort1.Location = new System.Drawing.Point(12, 117);
-=======
             this.tBPasswort1.Location = new System.Drawing.Point(8, 76);
             this.tBPasswort1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
->>>>>>> fd067b73106055db03d7395fdb7082da0ae30eb9:e-Bibliothek/e-Bibliothek/Form2.Designer.cs
             this.tBPasswort1.Name = "tBPasswort1";
             this.tBPasswort1.PasswordChar = '*';
             this.tBPasswort1.Size = new System.Drawing.Size(68, 20);
@@ -69,12 +63,9 @@
             // 
             // tBPasswort2
             // 
-<<<<<<< HEAD:e-Bibliothek/e-Bibliothek/.Designer.cs
             this.tBPasswort2.Location = new System.Drawing.Point(12, 194);
-=======
             this.tBPasswort2.Location = new System.Drawing.Point(8, 126);
             this.tBPasswort2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
->>>>>>> fd067b73106055db03d7395fdb7082da0ae30eb9:e-Bibliothek/e-Bibliothek/Form2.Designer.cs
             this.tBPasswort2.Name = "tBPasswort2";
             this.tBPasswort2.PasswordChar = '*';
             this.tBPasswort2.Size = new System.Drawing.Size(68, 20);
@@ -93,12 +84,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-<<<<<<< HEAD:e-Bibliothek/e-Bibliothek/.Designer.cs
             this.label2.Location = new System.Drawing.Point(8, 169);
-=======
             this.label2.Location = new System.Drawing.Point(5, 110);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
->>>>>>> fd067b73106055db03d7395fdb7082da0ae30eb9:e-Bibliothek/e-Bibliothek/Form2.Designer.cs
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 13);
             this.label2.TabIndex = 4;
@@ -107,12 +95,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-<<<<<<< HEAD:e-Bibliothek/e-Bibliothek/.Designer.cs
             this.label3.Location = new System.Drawing.Point(8, 92);
-=======
             this.label3.Location = new System.Drawing.Point(5, 60);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
->>>>>>> fd067b73106055db03d7395fdb7082da0ae30eb9:e-Bibliothek/e-Bibliothek/Form2.Designer.cs
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 13);
             this.label3.TabIndex = 5;
@@ -120,12 +105,9 @@
             // 
             // bWeiter
             // 
-<<<<<<< HEAD:e-Bibliothek/e-Bibliothek/.Designer.cs
             this.bWeiter.Location = new System.Drawing.Point(12, 251);
-=======
             this.bWeiter.Location = new System.Drawing.Point(8, 163);
             this.bWeiter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
->>>>>>> fd067b73106055db03d7395fdb7082da0ae30eb9:e-Bibliothek/e-Bibliothek/Form2.Designer.cs
             this.bWeiter.Name = "bWeiter";
             this.bWeiter.Size = new System.Drawing.Size(50, 25);
             this.bWeiter.TabIndex = 7;
@@ -136,12 +118,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
-<<<<<<< HEAD:e-Bibliothek/e-Bibliothek/.Designer.cs
             this.label4.Location = new System.Drawing.Point(218, 92);
-=======
             this.label4.Location = new System.Drawing.Point(145, 60);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
->>>>>>> fd067b73106055db03d7395fdb7082da0ae30eb9:e-Bibliothek/e-Bibliothek/Form2.Designer.cs
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 13);
             this.label4.TabIndex = 9;
@@ -149,29 +128,23 @@
             // 
             // tBAdresse
             // 
-<<<<<<< HEAD:e-Bibliothek/e-Bibliothek/.Designer.cs
             this.tBAdresse.Location = new System.Drawing.Point(222, 117);
             this.tBAdresse.Name = "tBAdresse";
             this.tBAdresse.Size = new System.Drawing.Size(200, 26);
-=======
             this.tBAdresse.Location = new System.Drawing.Point(148, 76);
             this.tBAdresse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tBAdresse.Name = "tBAdresse";
             this.tBAdresse.PasswordChar = '*';
             this.tBAdresse.Size = new System.Drawing.Size(68, 20);
->>>>>>> fd067b73106055db03d7395fdb7082da0ae30eb9:e-Bibliothek/e-Bibliothek/Form2.Designer.cs
             this.tBAdresse.TabIndex = 8;
             this.tBAdresse.TextChanged += new System.EventHandler(this.tBAdresse_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-<<<<<<< HEAD:e-Bibliothek/e-Bibliothek/.Designer.cs
             this.label5.Location = new System.Drawing.Point(218, 169);
-=======
             this.label5.Location = new System.Drawing.Point(145, 110);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
->>>>>>> fd067b73106055db03d7395fdb7082da0ae30eb9:e-Bibliothek/e-Bibliothek/Form2.Designer.cs
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 13);
             this.label5.TabIndex = 11;
@@ -179,12 +152,9 @@
             // 
             // dateTimePicker1
             // 
-<<<<<<< HEAD:e-Bibliothek/e-Bibliothek/.Designer.cs
             this.dateTimePicker1.Location = new System.Drawing.Point(222, 194);
-=======
             this.dateTimePicker1.Location = new System.Drawing.Point(148, 126);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
->>>>>>> fd067b73106055db03d7395fdb7082da0ae30eb9:e-Bibliothek/e-Bibliothek/Form2.Designer.cs
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(135, 20);
             this.dateTimePicker1.TabIndex = 12;
@@ -194,11 +164,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD:e-Bibliothek/e-Bibliothek/.Designer.cs
             this.ClientSize = new System.Drawing.Size(496, 342);
-=======
             this.ClientSize = new System.Drawing.Size(331, 222);
->>>>>>> fd067b73106055db03d7395fdb7082da0ae30eb9:e-Bibliothek/e-Bibliothek/Form2.Designer.cs
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);

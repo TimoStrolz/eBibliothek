@@ -21,5 +21,13 @@ namespace e_Bibliothek
         {
 
         }
+
+        private void btnKatalog_Click(object sender, EventArgs e)
+        {
+            KatalogForm kf = new KatalogForm();
+            kf.Show();
+            this.Hide();
+
+        }
     }
 }
