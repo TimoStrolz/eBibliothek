@@ -26,8 +26,15 @@ namespace e_Bibliothek
         {
             KatalogForm kf = new KatalogForm();
             kf.Show();
-            this.Hide();
+            
 
+        }
+
+        private void btnReservieren_Click(object sender, EventArgs e)
+        {
+            ReservationsForm rf = new ReservationsForm();
+            rf.Show();
+            this.Hide();
         }
     }
 }

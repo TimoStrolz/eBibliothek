@@ -32,3 +32,5 @@ C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_B
 C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.LobbyForm.resources
 C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.KatalogForm.resources
 C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csprojAssemblyReference.cache
+C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.ReservationsForm.resources
+C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.LoginMA.resources

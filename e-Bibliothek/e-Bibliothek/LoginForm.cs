@@ -84,6 +84,13 @@ namespace e_Bibliothek
         {
             KatalogForm kf = new KatalogForm();
             kf.Show();
+            
+        }
+
+        private void btnMitarbeiter_Click(object sender, EventArgs e)
+        {
+            LoginMA lma = new LoginMA();
+            lma.Show();
             this.Hide();
         }
     }

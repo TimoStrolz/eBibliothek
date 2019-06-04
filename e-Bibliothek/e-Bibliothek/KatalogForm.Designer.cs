@@ -70,6 +70,7 @@
             this.laufzeitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mindestalterDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.verfügbarkeitDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dVDsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.konsolenspieleBindingSource)).BeginInit();
@@ -376,11 +377,22 @@
             this.verfügbarkeitDataGridViewTextBoxColumn3.HeaderText = "verfügbarkeit";
             this.verfügbarkeitDataGridViewTextBoxColumn3.Name = "verfügbarkeitDataGridViewTextBoxColumn3";
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(929, 233);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(152, 33);
+            this.btnBack.TabIndex = 9;
+            this.btnBack.Text = "Zurück";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // KatalogForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1093, 663);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.dataGridViewDVDs);
             this.Controls.Add(this.dataGridViewKSpiele);
             this.Controls.Add(this.dataGridViewZeitungen);
@@ -450,5 +462,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn laufzeitDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn mindestalterDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn verfügbarkeitDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.Button btnBack;
     }
 }

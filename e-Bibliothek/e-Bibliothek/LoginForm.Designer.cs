@@ -35,6 +35,7 @@
             this.bLogin = new System.Windows.Forms.Button();
             this.bRegistrieren = new System.Windows.Forms.Button();
             this.btnKatalog = new System.Windows.Forms.Button();
+            this.btnMitarbeiter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tBUserN
@@ -100,11 +101,22 @@
             this.btnKatalog.UseVisualStyleBackColor = true;
             this.btnKatalog.Click += new System.EventHandler(this.btnKatalog_Click);
             // 
+            // btnMitarbeiter
+            // 
+            this.btnMitarbeiter.Location = new System.Drawing.Point(146, 102);
+            this.btnMitarbeiter.Name = "btnMitarbeiter";
+            this.btnMitarbeiter.Size = new System.Drawing.Size(145, 52);
+            this.btnMitarbeiter.TabIndex = 7;
+            this.btnMitarbeiter.Text = "als Mitarbeiter anmelden";
+            this.btnMitarbeiter.UseVisualStyleBackColor = true;
+            this.btnMitarbeiter.Click += new System.EventHandler(this.btnMitarbeiter_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(311, 180);
+            this.Controls.Add(this.btnMitarbeiter);
             this.Controls.Add(this.btnKatalog);
             this.Controls.Add(this.bRegistrieren);
             this.Controls.Add(this.bLogin);
@@ -129,6 +141,7 @@
         private System.Windows.Forms.Button bLogin;
         private System.Windows.Forms.Button bRegistrieren;
         private System.Windows.Forms.Button btnKatalog;
+        private System.Windows.Forms.Button btnMitarbeiter;
     }
 }
 

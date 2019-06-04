@@ -65,5 +65,10 @@ namespace e_Bibliothek
             dataGridViewKSpiele.Hide();
             dataGridViewDVDs.Show();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 } 

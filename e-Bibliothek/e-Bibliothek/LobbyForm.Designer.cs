@@ -50,6 +50,7 @@
             this.btnReservieren.TabIndex = 1;
             this.btnReservieren.Text = "Gegenstand reservieren";
             this.btnReservieren.UseVisualStyleBackColor = true;
+            this.btnReservieren.Click += new System.EventHandler(this.btnReservieren_Click);
             // 
             // LobbyForm
             // 
