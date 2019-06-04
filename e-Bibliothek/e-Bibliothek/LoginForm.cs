@@ -15,6 +15,7 @@ namespace e_Bibliothek
     public partial class LoginForm : Form
     {
         static int attempt = 3;
+        public int alter;
 
         public LoginForm()
         {
@@ -56,6 +57,14 @@ namespace e_Bibliothek
 
             if (scmd.ExecuteScalar().ToString() == "1")
             {
+                SqlCommand scmda = new SqlCommand("select BDATE from Benutzer where BenutzerName=@usr", scn);
+                scmda.Parameters.Clear();
+                scmda.Parameters.AddWithValue("@usr", tBUserN.Text);
+                var then = Convert.ToDateTime(scmda.ExecuteScalar());
+                var now = DateTime.UtcNow;
+                int age = now.Year - then.Year;
+                if (now.AddYears(-age) < then) age--;
+                alter = age;
                 LobbyForm lf = new LobbyForm();
                 lf.Show();
                 this.Hide();

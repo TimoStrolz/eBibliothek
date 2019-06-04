@@ -13,6 +13,7 @@ namespace e_Bibliothek
 {
     public partial class ReservationsForm : Form
     {
+        LoginForm lf = new LoginForm();
         public ReservationsForm()
         {
             InitializeComponent();
@@ -33,9 +34,11 @@ namespace e_Bibliothek
 
                 SqlCommand scmdKS = new SqlCommand("UPDATE konsolenspiele SET verfügbarkeit = '1' WHERE  titel=@ttl", scn);
                 SqlCommand vKS = new SqlCommand("Select verfügbarkeit FROM konsolenspiele WHERE  titel=@ttl", scn);
+                SqlCommand aKS = new SqlCommand("select count(*) as cnt from konsolenspiele where mindestalter > @altr and titel=@ttl", scn);
 
                 SqlCommand scmdDVD = new SqlCommand("UPDATE DVDs SET verfügbarkeit = '1' WHERE  titel=@ttl", scn);
                 SqlCommand vDVD = new SqlCommand("Select verfügbarkeit FROM DVDs WHERE  titel=@ttl", scn);
+                SqlCommand aDVD = new SqlCommand("select count(*) as cnt from DVDs where mindestalter > @altr and titel=@ttl", scn);
 
                 SqlCommand scmdZ = new SqlCommand("UPDATE Zeitungen SET verfügbarkeit = '1' WHERE  titel=@ttl", scn);
                 SqlCommand vZ = new SqlCommand("Select verfügbarkeit FROM Zeitungen WHERE  titel=@ttl", scn);
@@ -62,9 +65,17 @@ namespace e_Bibliothek
                         scmdKS.Parameters.AddWithValue("@ttl", textBox1.Text);
                         vKS.Parameters.Clear();
                         vKS.Parameters.AddWithValue("@ttl", textBox1.Text);
+                        aKS.Parameters.Clear();
+                        aKS.Parameters.AddWithValue("@altr", lf.alter);
+                        aKS.Parameters.AddWithValue("@ttl", textBox1.Text);
+
                         if (vKS.ExecuteScalar().ToString() == "1" || vKS.ExecuteScalar().ToString() == "2")
                         {
                             MessageBox.Show("Gegenstand nicht verfügbar");
+                        }
+                        if(aKS.ExecuteScalar().ToString() == "1")
+                        {
+                            MessageBox.Show("Sie sind zu jung");
                         }
                         else
                         {
@@ -79,9 +90,16 @@ namespace e_Bibliothek
                         scmdDVD.Parameters.AddWithValue("@ttl", textBox1.Text);
                         vDVD.Parameters.Clear();
                         vDVD.Parameters.AddWithValue("@ttl", textBox1.Text);
+                        aDVD.Parameters.Clear();
+                        aDVD.Parameters.AddWithValue("@altr", lf.alter);
+                        aDVD.Parameters.AddWithValue("@ttl", textBox1.Text);
                         if (vDVD.ExecuteScalar().ToString() == "1" || vDVD.ExecuteScalar().ToString() == "2")
                         {
                             MessageBox.Show("Gegenstand nicht verfügbar");
+                        }
+                        if (aKS.ExecuteScalar().ToString() == "1")
+                        {
+                            MessageBox.Show("Sie sind zu jung");
                         }
                         else
                         {

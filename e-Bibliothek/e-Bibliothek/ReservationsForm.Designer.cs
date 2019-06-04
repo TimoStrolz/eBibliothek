@@ -42,7 +42,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Bücher",
             "Zeitungen",
-            "Konsolen Spiele",
+            "konsolenspiele",
             "DVDs"});
             this.comboBox1.Location = new System.Drawing.Point(12, 36);
             this.comboBox1.Name = "comboBox1";
