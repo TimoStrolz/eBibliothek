@@ -88,6 +88,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Database1DataSetZeitungen.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HinzufügenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HinzufügenForm.Designer.cs">
+      <DependentUpon>HinzufügenForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="lobbyMA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     <Compile Include="VerfügbarkeitsForm.Designer.cs">
       <DependentUpon>VerfügbarkeitsForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="HinzufügenForm.resx">
+      <DependentUpon>HinzufügenForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KatalogForm.resx">
       <DependentUpon>KatalogForm.cs</DependentUpon>
     </EmbeddedResource>
