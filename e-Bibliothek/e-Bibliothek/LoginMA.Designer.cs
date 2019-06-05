@@ -102,6 +102,7 @@
             this.Controls.Add(this.tBUserN);
             this.Name = "LoginMA";
             this.Text = "LoginMA";
+            this.Load += new System.EventHandler(this.LoginMA_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

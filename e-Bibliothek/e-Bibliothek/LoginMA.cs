@@ -57,7 +57,7 @@ namespace e_Bibliothek
 
             if (scmd.ExecuteScalar().ToString() == "1")
             {
-                LobbyForm lf = new LobbyForm();
+                lobbyMA lf = new lobbyMA();
                 lf.Show();
                 this.Hide();
             }
@@ -72,6 +72,11 @@ namespace e_Bibliothek
                 tBPasswd.Clear();
             }
             scn.Close();
+        }
+
+        private void LoginMA_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

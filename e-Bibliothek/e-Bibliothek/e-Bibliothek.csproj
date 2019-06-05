@@ -88,6 +88,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Database1DataSetZeitungen.xsd</DependentUpon>
     </Compile>
+    <Compile Include="lobbyMA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lobbyMA.Designer.cs">
+      <DependentUpon>lobbyMA.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LobbyForm.resx">
       <DependentUpon>LobbyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lobbyMA.resx">
+      <DependentUpon>lobbyMA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

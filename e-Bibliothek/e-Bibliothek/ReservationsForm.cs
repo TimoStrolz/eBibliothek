@@ -42,6 +42,14 @@ namespace e_Bibliothek
 
                 SqlCommand scmdZ = new SqlCommand("UPDATE Zeitungen SET verfügbarkeit = '1' WHERE  titel=@ttl", scn);
                 SqlCommand vZ = new SqlCommand("Select verfügbarkeit FROM Zeitungen WHERE  titel=@ttl", scn);
+
+                SqlCommand scmda = new SqlCommand("select BDate from Benutzer where BenutzerName=@usr", scn);
+                scmda.Parameters.Clear();
+                scmda.Parameters.AddWithValue("@usr", lf.tBUserN.Text);
+                var then = Convert.ToDateTime(scmda.ExecuteScalar());
+                var now = DateTime.UtcNow;
+                int age = now.Year - then.Year;
+                if (now.AddYears(-age) < then) age--;
                 switch (comboBox1.Text)
                 {
                     case "Bücher":
@@ -66,7 +74,7 @@ namespace e_Bibliothek
                         vKS.Parameters.Clear();
                         vKS.Parameters.AddWithValue("@ttl", textBox1.Text);
                         aKS.Parameters.Clear();
-                        aKS.Parameters.AddWithValue("@altr", lf.alter);
+                        aKS.Parameters.AddWithValue("@altr", age);
                         aKS.Parameters.AddWithValue("@ttl", textBox1.Text);
 
                         if (vKS.ExecuteScalar().ToString() == "1" || vKS.ExecuteScalar().ToString() == "2")
@@ -91,7 +99,7 @@ namespace e_Bibliothek
                         vDVD.Parameters.Clear();
                         vDVD.Parameters.AddWithValue("@ttl", textBox1.Text);
                         aDVD.Parameters.Clear();
-                        aDVD.Parameters.AddWithValue("@altr", lf.alter);
+                        aDVD.Parameters.AddWithValue("@altr", age);
                         aDVD.Parameters.AddWithValue("@ttl", textBox1.Text);
                         if (vDVD.ExecuteScalar().ToString() == "1" || vDVD.ExecuteScalar().ToString() == "2")
                         {
@@ -144,7 +152,7 @@ namespace e_Bibliothek
 
         private void ReservationsForm_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

@@ -22,7 +22,6 @@ C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\bin\Debug\Dat
 C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\bin\Debug\e-Bibliothek.exe.config
 C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\bin\Debug\e-Bibliothek.exe
 C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\bin\Debug\e-Bibliothek.pdb
-C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csprojAssemblyReference.cache
 C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.KatalogForm.resources
 C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.LobbyForm.resources
 C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.LoginForm.resources
@@ -34,3 +33,4 @@ C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e-B
 C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.csproj.CoreCompileInputs.cache
 C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.exe
 C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.pdb
+C:\Users\timos\source\repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.lobbyMA.resources
