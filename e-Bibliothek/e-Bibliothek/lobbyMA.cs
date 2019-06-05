@@ -21,5 +21,24 @@ namespace e_Bibliothek
         {
 
         }
+
+        private void btnVerfügbarkeit_Click(object sender, EventArgs e)
+        {
+            VerfügbarkeitsForm vf = new VerfügbarkeitsForm();
+            vf.Show();
+            this.Close();
+        }
+
+        private void btnHinzufügen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnKatalog_Click(object sender, EventArgs e)
+        {
+            KatalogForm kf = new KatalogForm();
+            kf.Show();
+            this.Hide();
+        }
     }
 }

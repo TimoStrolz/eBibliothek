@@ -46,7 +46,7 @@
             // 
             this.btnReservieren.Location = new System.Drawing.Point(12, 53);
             this.btnReservieren.Name = "btnReservieren";
-            this.btnReservieren.Size = new System.Drawing.Size(173, 49);
+            this.btnReservieren.Size = new System.Drawing.Size(173, 53);
             this.btnReservieren.TabIndex = 1;
             this.btnReservieren.Text = "Gegenstand reservieren";
             this.btnReservieren.UseVisualStyleBackColor = true;

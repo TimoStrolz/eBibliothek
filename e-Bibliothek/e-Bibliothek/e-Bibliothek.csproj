@@ -133,6 +133,12 @@
     <Compile Include="ReservationsForm.Designer.cs">
       <DependentUpon>ReservationsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="VerfügbarkeitsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerfügbarkeitsForm.Designer.cs">
+      <DependentUpon>VerfügbarkeitsForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="KatalogForm.resx">
       <DependentUpon>KatalogForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +168,9 @@
     </Compile>
     <EmbeddedResource Include="ReservationsForm.resx">
       <DependentUpon>ReservationsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerfügbarkeitsForm.resx">
+      <DependentUpon>VerfügbarkeitsForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Database1DataSet.xsc">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
