@@ -133,8 +133,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox tBUserN;
         private System.Windows.Forms.TextBox tBPasswd;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -142,6 +140,7 @@
         private System.Windows.Forms.Button bRegistrieren;
         private System.Windows.Forms.Button btnKatalog;
         private System.Windows.Forms.Button btnMitarbeiter;
+        public System.Windows.Forms.TextBox tBUserN;
     }
 }
 
