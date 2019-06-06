@@ -31,14 +31,15 @@ namespace e_Bibliothek
 
         private void btnHinzufügen_Click(object sender, EventArgs e)
         {
-
+            HinzufügenForm hf = new HinzufügenForm();
+            hf.Show();
+            this.Hide();
         }
 
         private void btnKatalog_Click(object sender, EventArgs e)
         {
             KatalogForm kf = new KatalogForm();
             kf.Show();
-            this.Hide();
         }
     }
 }
