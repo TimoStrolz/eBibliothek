@@ -23,5 +23,10 @@ namespace e_Bibliothek
             this.benutzerMedienTableAdapter.Fill(this.database1DataSet3.BenutzerMedien);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

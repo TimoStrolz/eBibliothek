@@ -30,15 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.database1DataSet3 = new e_Bibliothek.Database1DataSet3();
-            this.benutzerMedienBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.benutzerMedienTableAdapter = new e_Bibliothek.Database1DataSet3TableAdapters.BenutzerMedienTableAdapter();
             this.benutzerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gegenstandDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kategorieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.benutzerMedienBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database1DataSet3 = new e_Bibliothek.Database1DataSet3();
+            this.benutzerMedienTableAdapter = new e_Bibliothek.Database1DataSet3TableAdapters.BenutzerMedienTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.benutzerMedienBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -54,53 +55,67 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(798, 450);
+            this.dataGridView1.Size = new System.Drawing.Size(787, 359);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // database1DataSet3
-            // 
-            this.database1DataSet3.DataSetName = "Database1DataSet3";
-            this.database1DataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // benutzerMedienBindingSource
-            // 
-            this.benutzerMedienBindingSource.DataMember = "BenutzerMedien";
-            this.benutzerMedienBindingSource.DataSource = this.database1DataSet3;
-            // 
-            // benutzerMedienTableAdapter
-            // 
-            this.benutzerMedienTableAdapter.ClearBeforeFill = true;
             // 
             // benutzerDataGridViewTextBoxColumn
             // 
             this.benutzerDataGridViewTextBoxColumn.DataPropertyName = "Benutzer";
             this.benutzerDataGridViewTextBoxColumn.HeaderText = "Benutzer";
             this.benutzerDataGridViewTextBoxColumn.Name = "benutzerDataGridViewTextBoxColumn";
+            this.benutzerDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // gegenstandDataGridViewTextBoxColumn
             // 
             this.gegenstandDataGridViewTextBoxColumn.DataPropertyName = "Gegenstand";
             this.gegenstandDataGridViewTextBoxColumn.HeaderText = "Gegenstand";
             this.gegenstandDataGridViewTextBoxColumn.Name = "gegenstandDataGridViewTextBoxColumn";
+            this.gegenstandDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // kategorieDataGridViewTextBoxColumn
             // 
             this.kategorieDataGridViewTextBoxColumn.DataPropertyName = "Kategorie";
             this.kategorieDataGridViewTextBoxColumn.HeaderText = "Kategorie";
             this.kategorieDataGridViewTextBoxColumn.Name = "kategorieDataGridViewTextBoxColumn";
+            this.kategorieDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // benutzerMedienBindingSource
+            // 
+            this.benutzerMedienBindingSource.DataMember = "BenutzerMedien";
+            this.benutzerMedienBindingSource.DataSource = this.database1DataSet3;
+            // 
+            // database1DataSet3
+            // 
+            this.database1DataSet3.DataSetName = "Database1DataSet3";
+            this.database1DataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // benutzerMedienTableAdapter
+            // 
+            this.benutzerMedienTableAdapter.ClearBeforeFill = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(13, 406);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(84, 32);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Zurück";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // BenutzerMedien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "BenutzerMedien";
             this.Text = "BenutzerMedien";
             this.Load += new System.EventHandler(this.BenutzerMedien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.benutzerMedienBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -114,5 +129,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn benutzerDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn gegenstandDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn kategorieDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button1;
     }
 }

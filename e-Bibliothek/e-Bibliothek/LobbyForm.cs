@@ -36,5 +36,11 @@ namespace e_Bibliothek
             rf.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BenutzerMedien bm = new BenutzerMedien();
+            bm.Show();
+        }
     }
 }

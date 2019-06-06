@@ -53,7 +53,6 @@ namespace e_Bibliothek
         {
             BenutzerMedien bm = new BenutzerMedien();
             bm.Show();
-            this.Hide();
         }
     }
 }
