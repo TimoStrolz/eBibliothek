@@ -13,6 +13,7 @@ namespace e_Bibliothek
 {
     public partial class VerfügbarkeitsForm : Form
     {
+        LoginForm lf = new LoginForm();
         public VerfügbarkeitsForm()
         {
             InitializeComponent();
@@ -20,7 +21,7 @@ namespace e_Bibliothek
 
         private void VerfügbarkeitsForm_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -40,87 +41,112 @@ namespace e_Bibliothek
             {
                 scn.Open();
 
-                SqlCommand scmdB = new SqlCommand("UPDATE Bücher SET verfügbarkeit = @vbk WHERE  titel=@ttl", scn);
-                SqlCommand scmdDVDs = new SqlCommand("UPDATE Bücher SET verfügbarkeit = @vbk WHERE  titel=@ttl", scn);
-                SqlCommand scmdKS = new SqlCommand("UPDATE Bücher SET verfügbarkeit = @vbk WHERE  titel=@ttl", scn);
-                SqlCommand scmdZ = new SqlCommand("UPDATE Bücher SET verfügbarkeit = @vbk WHERE  titel=@ttl", scn);
+                SqlCommand scmdB = new SqlCommand("UPDATE Bücher SET verfügbarkeit = @vbk AND benutzer=@name WHERE  titel=@ttl", scn);
+                SqlCommand scmdDVDs = new SqlCommand("UPDATE DVDs SET verfügbarkeit = @vbk AND benutzer=@name WHERE  titel=@ttl", scn);
+                SqlCommand scmdKS = new SqlCommand("UPDATE Konsolenspiele SET verfügbarkeit = @vbk AND benutzer=@name WHERE  titel=@ttl", scn);
+                SqlCommand scmdZ = new SqlCommand("UPDATE Zeitungen SET verfügbarkeit = @vbk AND benutzer=@name WHERE  titel=@ttl", scn);
                 switch (comboBoxVerfügbarkeit.Text)
                 {
                     case "reserviert":
                         scmdB.Parameters.Clear();
                         scmdB.Parameters.AddWithValue("@ttl", textBox1.Text);
                         scmdB.Parameters.AddWithValue("@vbk", '1');
+                        scmdB.Parameters.AddWithValue("@name",  lf.tBUserN.Text);
 
                         scmdZ.Parameters.Clear();
                         scmdZ.Parameters.AddWithValue("@ttl", textBox1.Text);
                         scmdZ.Parameters.AddWithValue("@vbk", '1');
+                        scmdZ.Parameters.AddWithValue("@name", lf.tBUserN.Text);
 
                         scmdDVDs.Parameters.Clear();
                         scmdDVDs.Parameters.AddWithValue("@ttl", textBox1.Text);
                         scmdDVDs.Parameters.AddWithValue("@vbk", '1');
+                        scmdDVDs.Parameters.AddWithValue("@name", lf.tBUserN.Text);
 
                         scmdKS.Parameters.Clear();
                         scmdKS.Parameters.AddWithValue("@ttl", textBox1.Text);
                         scmdKS.Parameters.AddWithValue("@vbk", '1');
+                        scmdKS.Parameters.AddWithValue("@name", lf.tBUserN.Text);
                         break;
 
                     case "ausgeliehen":
+                        SqlCommand bm = new SqlCommand("INSERT INTO BenutzerMedien(Benutzer, Gegenstand, Kategorie) VALUES(@name, @item, @category)", scn);
+                        bm.Parameters.Clear();
+                        bm.Parameters.AddWithValue("@categor", comboBoxCgy.Text);
+                        bm.Parameters.AddWithValue("@item", textBox1.Text);
+                        bm.Parameters.AddWithValue("@name", lf.tBUserN.Text);
+                        bm.ExecuteNonQuery();
+
+
                         scmdB.Parameters.Clear();
                         scmdB.Parameters.AddWithValue("@ttl", textBox1.Text);
                         scmdB.Parameters.AddWithValue("@vbk", '2');
+                        scmdB.Parameters.AddWithValue("@name", lf.tBUserN.Text);
 
                         scmdZ.Parameters.Clear();
                         scmdZ.Parameters.AddWithValue("@ttl", textBox1.Text);
                         scmdZ.Parameters.AddWithValue("@vbk", '2');
+                        scmdZ.Parameters.AddWithValue("@name", lf.tBUserN.Text);
 
                         scmdDVDs.Parameters.Clear();
                         scmdDVDs.Parameters.AddWithValue("@ttl", textBox1.Text);
                         scmdDVDs.Parameters.AddWithValue("@vbk", '2');
+                        scmdDVDs.Parameters.AddWithValue("@name", lf.tBUserN.Text);
 
                         scmdKS.Parameters.Clear();
                         scmdKS.Parameters.AddWithValue("@ttl", textBox1.Text);
                         scmdKS.Parameters.AddWithValue("@vbk", '2');
+                        scmdKS.Parameters.AddWithValue("@name", lf.tBUserN.Text);
                         break;
 
                     case "zurückgebracht":
                         scmdB.Parameters.Clear();
                         scmdB.Parameters.AddWithValue("@ttl", textBox1.Text);
                         scmdB.Parameters.AddWithValue("@vbk", '0');
+                        scmdB.Parameters.AddWithValue("@name", '0');
 
                         scmdZ.Parameters.Clear();
                         scmdZ.Parameters.AddWithValue("@ttl", textBox1.Text);
                         scmdZ.Parameters.AddWithValue("@vbk", '0');
+                        scmdZ.Parameters.AddWithValue("@name", '0');
 
                         scmdDVDs.Parameters.Clear();
                         scmdDVDs.Parameters.AddWithValue("@ttl", textBox1.Text);
                         scmdDVDs.Parameters.AddWithValue("@vbk", '0');
+                        scmdDVDs.Parameters.AddWithValue("@name", '0');
 
                         scmdKS.Parameters.Clear();
                         scmdKS.Parameters.AddWithValue("@ttl", textBox1.Text);
                         scmdKS.Parameters.AddWithValue("@vbk", '0');
+                        scmdKS.Parameters.AddWithValue("@name", '0');
                         break;
 
                     case "verfügbar (Reservation storniert)":
                         scmdB.Parameters.Clear();
                         scmdB.Parameters.AddWithValue("@ttl", textBox1.Text);
                         scmdB.Parameters.AddWithValue("@vbk", '0');
+                        scmdB.Parameters.AddWithValue("@name", '0');
 
                         scmdZ.Parameters.Clear();
                         scmdZ.Parameters.AddWithValue("@ttl", textBox1.Text);
                         scmdZ.Parameters.AddWithValue("@vbk", '0');
+                        scmdZ.Parameters.AddWithValue("@name", '0');
 
                         scmdDVDs.Parameters.Clear();
                         scmdDVDs.Parameters.AddWithValue("@ttl", textBox1.Text);
                         scmdDVDs.Parameters.AddWithValue("@vbk", '0');
+                        scmdDVDs.Parameters.AddWithValue("@name", '0');
 
                         scmdKS.Parameters.Clear();
                         scmdKS.Parameters.AddWithValue("@ttl", textBox1.Text);
                         scmdKS.Parameters.AddWithValue("@vbk", '0');
+                        scmdKS.Parameters.AddWithValue("@name", '0');
                         break;
 
                 }
                 switch (comboBoxCgy.Text)
                 {
+                
                     case "Buch":
                         scmdB.ExecuteNonQuery();
                         MessageBox.Show("Änderung übernommen");

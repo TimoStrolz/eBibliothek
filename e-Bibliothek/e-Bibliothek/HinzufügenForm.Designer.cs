@@ -57,15 +57,6 @@
             this.buttonDH = new System.Windows.Forms.Button();
             this.textBoxDT = new System.Windows.Forms.TextBox();
             this.panelZeitung = new System.Windows.Forms.Panel();
-            this.panelKS = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.textBoxKSM = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBoxKSS = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBoxKST = new System.Windows.Forms.TextBox();
-            this.buttonKSH = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
             this.btnZBack = new System.Windows.Forms.Button();
             this.buttonZH = new System.Windows.Forms.Button();
             this.textBoxZEH = new System.Windows.Forms.TextBox();
@@ -78,6 +69,15 @@
             this.textBoxZT = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnBBAck = new System.Windows.Forms.Button();
+            this.panelKS = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.textBoxKSM = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBoxKSS = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBoxKST = new System.Windows.Forms.TextBox();
+            this.buttonKSH = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             label9 = new System.Windows.Forms.Label();
             this.panelBuch.SuspendLayout();
@@ -366,89 +366,6 @@
             this.panelZeitung.Size = new System.Drawing.Size(797, 448);
             this.panelZeitung.TabIndex = 5;
             // 
-            // panelKS
-            // 
-            this.panelKS.Controls.Add(this.btnBack);
-            this.panelKS.Controls.Add(this.textBoxKSM);
-            this.panelKS.Controls.Add(this.label13);
-            this.panelKS.Controls.Add(this.textBoxKSS);
-            this.panelKS.Controls.Add(this.label12);
-            this.panelKS.Controls.Add(this.textBoxKST);
-            this.panelKS.Controls.Add(this.buttonKSH);
-            this.panelKS.Controls.Add(this.label11);
-            this.panelKS.Location = new System.Drawing.Point(1, 3);
-            this.panelKS.Name = "panelKS";
-            this.panelKS.Size = new System.Drawing.Size(801, 448);
-            this.panelKS.TabIndex = 12;
-            // 
-            // btnBack
-            // 
-            this.btnBack.Location = new System.Drawing.Point(7, 363);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(110, 33);
-            this.btnBack.TabIndex = 7;
-            this.btnBack.Text = "Zurück";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // textBoxKSM
-            // 
-            this.textBoxKSM.Location = new System.Drawing.Point(5, 226);
-            this.textBoxKSM.Name = "textBoxKSM";
-            this.textBoxKSM.Size = new System.Drawing.Size(100, 26);
-            this.textBoxKSM.TabIndex = 6;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(5, 203);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(96, 20);
-            this.label13.TabIndex = 5;
-            this.label13.Text = "Mindestalter";
-            // 
-            // textBoxKSS
-            // 
-            this.textBoxKSS.Location = new System.Drawing.Point(7, 118);
-            this.textBoxKSS.Name = "textBoxKSS";
-            this.textBoxKSS.Size = new System.Drawing.Size(100, 26);
-            this.textBoxKSS.TabIndex = 4;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(7, 95);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(62, 20);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "System";
-            // 
-            // textBoxKST
-            // 
-            this.textBoxKST.Location = new System.Drawing.Point(7, 33);
-            this.textBoxKST.Name = "textBoxKST";
-            this.textBoxKST.Size = new System.Drawing.Size(100, 26);
-            this.textBoxKST.TabIndex = 2;
-            // 
-            // buttonKSH
-            // 
-            this.buttonKSH.Location = new System.Drawing.Point(7, 300);
-            this.buttonKSH.Name = "buttonKSH";
-            this.buttonKSH.Size = new System.Drawing.Size(145, 38);
-            this.buttonKSH.TabIndex = 1;
-            this.buttonKSH.Text = "Spiel hinzufügen";
-            this.buttonKSH.UseVisualStyleBackColor = true;
-            this.buttonKSH.Click += new System.EventHandler(this.buttonKSH_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(7, 10);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(38, 20);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Titel";
-            // 
             // btnZBack
             // 
             this.btnZBack.Location = new System.Drawing.Point(174, 391);
@@ -550,6 +467,89 @@
             this.btnBBAck.UseVisualStyleBackColor = true;
             this.btnBBAck.Click += new System.EventHandler(this.btnBBAck_Click);
             // 
+            // panelKS
+            // 
+            this.panelKS.Controls.Add(this.btnBack);
+            this.panelKS.Controls.Add(this.textBoxKSM);
+            this.panelKS.Controls.Add(this.label13);
+            this.panelKS.Controls.Add(this.textBoxKSS);
+            this.panelKS.Controls.Add(this.label12);
+            this.panelKS.Controls.Add(this.textBoxKST);
+            this.panelKS.Controls.Add(this.buttonKSH);
+            this.panelKS.Controls.Add(this.label11);
+            this.panelKS.Location = new System.Drawing.Point(1, 3);
+            this.panelKS.Name = "panelKS";
+            this.panelKS.Size = new System.Drawing.Size(801, 448);
+            this.panelKS.TabIndex = 12;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(7, 363);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(110, 33);
+            this.btnBack.TabIndex = 7;
+            this.btnBack.Text = "Zurück";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // textBoxKSM
+            // 
+            this.textBoxKSM.Location = new System.Drawing.Point(5, 226);
+            this.textBoxKSM.Name = "textBoxKSM";
+            this.textBoxKSM.Size = new System.Drawing.Size(100, 26);
+            this.textBoxKSM.TabIndex = 6;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(5, 203);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(96, 20);
+            this.label13.TabIndex = 5;
+            this.label13.Text = "Mindestalter";
+            // 
+            // textBoxKSS
+            // 
+            this.textBoxKSS.Location = new System.Drawing.Point(7, 118);
+            this.textBoxKSS.Name = "textBoxKSS";
+            this.textBoxKSS.Size = new System.Drawing.Size(100, 26);
+            this.textBoxKSS.TabIndex = 4;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(7, 95);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(62, 20);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "System";
+            // 
+            // textBoxKST
+            // 
+            this.textBoxKST.Location = new System.Drawing.Point(7, 33);
+            this.textBoxKST.Name = "textBoxKST";
+            this.textBoxKST.Size = new System.Drawing.Size(100, 26);
+            this.textBoxKST.TabIndex = 2;
+            // 
+            // buttonKSH
+            // 
+            this.buttonKSH.Location = new System.Drawing.Point(7, 300);
+            this.buttonKSH.Name = "buttonKSH";
+            this.buttonKSH.Size = new System.Drawing.Size(145, 38);
+            this.buttonKSH.TabIndex = 1;
+            this.buttonKSH.Text = "Spiel hinzufügen";
+            this.buttonKSH.UseVisualStyleBackColor = true;
+            this.buttonKSH.Click += new System.EventHandler(this.buttonKSH_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(7, 10);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(38, 20);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Titel";
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(13, 195);
@@ -574,6 +574,7 @@
             this.Controls.Add(this.btnBuch);
             this.Name = "HinzufügenForm";
             this.Text = "HinzufügenForm";
+            this.Load += new System.EventHandler(this.HinzufügenForm_Load);
             this.panelBuch.ResumeLayout(false);
             this.panelBuch.PerformLayout();
             this.panelDVD.ResumeLayout(false);

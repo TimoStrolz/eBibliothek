@@ -36,6 +36,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBoxCgy = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBBenutzer = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // comboBoxVerfügbarkeit
@@ -72,7 +74,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(8, 212);
+            this.button1.Location = new System.Drawing.Point(7, 318);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 55);
             this.button1.TabIndex = 4;
@@ -82,7 +84,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(8, 318);
+            this.btnBack.Location = new System.Drawing.Point(8, 403);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(81, 35);
             this.btnBack.TabIndex = 5;
@@ -120,11 +122,29 @@
             this.comboBoxCgy.TabIndex = 8;
             this.comboBoxCgy.SelectedIndexChanged += new System.EventHandler(this.comboBoxCgy_SelectedIndexChanged);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 220);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(111, 20);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Vom Benutzer";
+            // 
+            // textBBenutzer
+            // 
+            this.textBBenutzer.Location = new System.Drawing.Point(16, 244);
+            this.textBBenutzer.Name = "textBBenutzer";
+            this.textBBenutzer.Size = new System.Drawing.Size(100, 26);
+            this.textBBenutzer.TabIndex = 10;
+            // 
             // VerfügbarkeitsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBBenutzer);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBoxCgy);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
@@ -151,5 +171,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBoxCgy;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBBenutzer;
     }
 }

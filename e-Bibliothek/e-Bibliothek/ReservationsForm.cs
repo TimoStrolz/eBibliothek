@@ -29,18 +29,18 @@ namespace e_Bibliothek
             {
                 scn.Open();
             
-                SqlCommand scmdB = new SqlCommand("UPDATE Bücher SET verfügbarkeit = '1' WHERE  titel=@ttl", scn);
+                SqlCommand scmdB = new SqlCommand("UPDATE Bücher SET verfügbarkeit = '1' AND benutzer=@name WHERE  titel=@ttl", scn);
                 SqlCommand vB = new SqlCommand("Select verfügbarkeit FROM Bücher WHERE  titel=@ttl", scn);
 
-                SqlCommand scmdKS = new SqlCommand("UPDATE konsolenspiele SET verfügbarkeit = '1' WHERE  titel=@ttl", scn);
+                SqlCommand scmdKS = new SqlCommand("UPDATE konsolenspiele SET verfügbarkeit = '1' AND benutzer=@name WHERE  titel=@ttl", scn);
                 SqlCommand vKS = new SqlCommand("Select verfügbarkeit FROM konsolenspiele WHERE  titel=@ttl", scn);
                 SqlCommand aKS = new SqlCommand("select count(*) as cnt from konsolenspiele where mindestalter > @altr and titel=@ttl", scn);
 
-                SqlCommand scmdDVD = new SqlCommand("UPDATE DVDs SET verfügbarkeit = '1' WHERE  titel=@ttl", scn);
+                SqlCommand scmdDVD = new SqlCommand("UPDATE DVDs SET verfügbarkeit = '1' AND benutzer=@name WHERE  titel=@ttl", scn);
                 SqlCommand vDVD = new SqlCommand("Select verfügbarkeit FROM DVDs WHERE  titel=@ttl", scn);
                 SqlCommand aDVD = new SqlCommand("select count(*) as cnt from DVDs where mindestalter > @altr and titel=@ttl", scn);
 
-                SqlCommand scmdZ = new SqlCommand("UPDATE Zeitungen SET verfügbarkeit = '1' WHERE  titel=@ttl", scn);
+                SqlCommand scmdZ = new SqlCommand("UPDATE Zeitungen SET verfügbarkeit = '1' AND benutzer=@name WHERE  titel=@ttl", scn);
                 SqlCommand vZ = new SqlCommand("Select verfügbarkeit FROM Zeitungen WHERE  titel=@ttl", scn);
 
                 SqlCommand scmda = new SqlCommand("select BDate from Benutzer where BenutzerName=@usr", scn);
@@ -55,6 +55,7 @@ namespace e_Bibliothek
                     case "Bücher":
                         scmdB.Parameters.Clear();
                         scmdB.Parameters.AddWithValue("@ttl", textBox1.Text);
+                        scmdB.Parameters.AddWithValue("@name", lf.tBUserN.Text);
                         vB.Parameters.Clear();
                         vB.Parameters.AddWithValue("@ttl", textBox1.Text);
                         if (vB.ExecuteScalar().ToString() == "1" || vB.ExecuteScalar().ToString() == "2")
@@ -71,6 +72,7 @@ namespace e_Bibliothek
                     case "konsolenspiele":
                         scmdKS.Parameters.Clear();
                         scmdKS.Parameters.AddWithValue("@ttl", textBox1.Text);
+                        scmdKS.Parameters.AddWithValue("@name", lf.tBUserN.Text);
                         vKS.Parameters.Clear();
                         vKS.Parameters.AddWithValue("@ttl", textBox1.Text);
                         aKS.Parameters.Clear();
@@ -96,6 +98,7 @@ namespace e_Bibliothek
                     case "DVDs":
                         scmdDVD.Parameters.Clear();
                         scmdDVD.Parameters.AddWithValue("@ttl", textBox1.Text);
+                        scmdDVD.Parameters.AddWithValue("@name", lf.tBUserN.Text);
                         vDVD.Parameters.Clear();
                         vDVD.Parameters.AddWithValue("@ttl", textBox1.Text);
                         aDVD.Parameters.Clear();
@@ -120,6 +123,7 @@ namespace e_Bibliothek
                     case "Zeitungen":
                         scmdZ.Parameters.Clear();
                         scmdZ.Parameters.AddWithValue("@ttl", textBox1.Text);
+                        scmdZ.Parameters.AddWithValue("@name", lf.tBUserN.Text);
                         vZ.Parameters.Clear();
                         vZ.Parameters.AddWithValue("@ttl", textBox1.Text);
                         if (vZ.ExecuteScalar().ToString() == "1" || vZ.ExecuteScalar().ToString() == "2")

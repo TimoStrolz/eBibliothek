@@ -75,5 +75,10 @@ namespace e_Bibliothek
         {
 
         }
+
+        private void dataGridViewDVDs_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 } 

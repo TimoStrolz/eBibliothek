@@ -157,5 +157,10 @@ namespace e_Bibliothek
             lma.Show();
             this.Hide();
         }
+
+        private void HinzufügenForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -206,36 +206,42 @@
             this.autorDataGridViewTextBoxColumn.DataPropertyName = "autor";
             this.autorDataGridViewTextBoxColumn.HeaderText = "autor";
             this.autorDataGridViewTextBoxColumn.Name = "autorDataGridViewTextBoxColumn";
+            this.autorDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // titelDataGridViewTextBoxColumn
             // 
             this.titelDataGridViewTextBoxColumn.DataPropertyName = "titel";
             this.titelDataGridViewTextBoxColumn.HeaderText = "titel";
             this.titelDataGridViewTextBoxColumn.Name = "titelDataGridViewTextBoxColumn";
+            this.titelDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // isbnnummerDataGridViewTextBoxColumn
             // 
             this.isbnnummerDataGridViewTextBoxColumn.DataPropertyName = "isbnnummer";
             this.isbnnummerDataGridViewTextBoxColumn.HeaderText = "isbnnummer";
             this.isbnnummerDataGridViewTextBoxColumn.Name = "isbnnummerDataGridViewTextBoxColumn";
+            this.isbnnummerDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // artDataGridViewTextBoxColumn
             // 
             this.artDataGridViewTextBoxColumn.DataPropertyName = "art";
             this.artDataGridViewTextBoxColumn.HeaderText = "art";
             this.artDataGridViewTextBoxColumn.Name = "artDataGridViewTextBoxColumn";
+            this.artDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // seitenDataGridViewTextBoxColumn
             // 
             this.seitenDataGridViewTextBoxColumn.DataPropertyName = "seiten";
             this.seitenDataGridViewTextBoxColumn.HeaderText = "seiten";
             this.seitenDataGridViewTextBoxColumn.Name = "seitenDataGridViewTextBoxColumn";
+            this.seitenDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // verfügbarkeitDataGridViewTextBoxColumn
             // 
             this.verfügbarkeitDataGridViewTextBoxColumn.DataPropertyName = "verfügbarkeit";
             this.verfügbarkeitDataGridViewTextBoxColumn.HeaderText = "verfügbarkeit";
             this.verfügbarkeitDataGridViewTextBoxColumn.Name = "verfügbarkeitDataGridViewTextBoxColumn";
+            this.verfügbarkeitDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // dataGridViewZeitungen
             // 
@@ -261,36 +267,42 @@
             this.titelDataGridViewTextBoxColumn1.DataPropertyName = "titel";
             this.titelDataGridViewTextBoxColumn1.HeaderText = "titel";
             this.titelDataGridViewTextBoxColumn1.Name = "titelDataGridViewTextBoxColumn1";
+            this.titelDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // verlagDataGridViewTextBoxColumn
             // 
             this.verlagDataGridViewTextBoxColumn.DataPropertyName = "verlag";
             this.verlagDataGridViewTextBoxColumn.HeaderText = "verlag";
             this.verlagDataGridViewTextBoxColumn.Name = "verlagDataGridViewTextBoxColumn";
+            this.verlagDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // issnnummerDataGridViewTextBoxColumn
             // 
             this.issnnummerDataGridViewTextBoxColumn.DataPropertyName = " issn-nummer";
             this.issnnummerDataGridViewTextBoxColumn.HeaderText = " issn-nummer";
             this.issnnummerDataGridViewTextBoxColumn.Name = "issnnummerDataGridViewTextBoxColumn";
+            this.issnnummerDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // artDataGridViewTextBoxColumn1
             // 
             this.artDataGridViewTextBoxColumn1.DataPropertyName = "art";
             this.artDataGridViewTextBoxColumn1.HeaderText = "art";
             this.artDataGridViewTextBoxColumn1.Name = "artDataGridViewTextBoxColumn1";
+            this.artDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // erscheinungshäufigkeitDataGridViewTextBoxColumn
             // 
             this.erscheinungshäufigkeitDataGridViewTextBoxColumn.DataPropertyName = "erscheinungshäufigkeit";
             this.erscheinungshäufigkeitDataGridViewTextBoxColumn.HeaderText = "erscheinungshäufigkeit";
             this.erscheinungshäufigkeitDataGridViewTextBoxColumn.Name = "erscheinungshäufigkeitDataGridViewTextBoxColumn";
+            this.erscheinungshäufigkeitDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // verfügbarkeitDataGridViewTextBoxColumn1
             // 
             this.verfügbarkeitDataGridViewTextBoxColumn1.DataPropertyName = "verfügbarkeit";
             this.verfügbarkeitDataGridViewTextBoxColumn1.HeaderText = "verfügbarkeit";
             this.verfügbarkeitDataGridViewTextBoxColumn1.Name = "verfügbarkeitDataGridViewTextBoxColumn1";
+            this.verfügbarkeitDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewKSpiele
             // 
@@ -315,24 +327,28 @@
             this.titelDataGridViewTextBoxColumn2.DataPropertyName = "titel";
             this.titelDataGridViewTextBoxColumn2.HeaderText = "titel";
             this.titelDataGridViewTextBoxColumn2.Name = "titelDataGridViewTextBoxColumn2";
+            this.titelDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // systemDataGridViewTextBoxColumn
             // 
             this.systemDataGridViewTextBoxColumn.DataPropertyName = "system";
             this.systemDataGridViewTextBoxColumn.HeaderText = "system";
             this.systemDataGridViewTextBoxColumn.Name = "systemDataGridViewTextBoxColumn";
+            this.systemDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // mindestalterDataGridViewTextBoxColumn
             // 
             this.mindestalterDataGridViewTextBoxColumn.DataPropertyName = "mindestalter";
             this.mindestalterDataGridViewTextBoxColumn.HeaderText = "mindestalter";
             this.mindestalterDataGridViewTextBoxColumn.Name = "mindestalterDataGridViewTextBoxColumn";
+            this.mindestalterDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // verfügbarkeitDataGridViewTextBoxColumn2
             // 
             this.verfügbarkeitDataGridViewTextBoxColumn2.DataPropertyName = "verfügbarkeit";
             this.verfügbarkeitDataGridViewTextBoxColumn2.HeaderText = "verfügbarkeit";
             this.verfügbarkeitDataGridViewTextBoxColumn2.Name = "verfügbarkeitDataGridViewTextBoxColumn2";
+            this.verfügbarkeitDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewDVDs
             // 
@@ -353,6 +369,7 @@
             this.dataGridViewDVDs.RowTemplate.Height = 28;
             this.dataGridViewDVDs.Size = new System.Drawing.Size(910, 639);
             this.dataGridViewDVDs.TabIndex = 8;
+            this.dataGridViewDVDs.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDVDs_CellContentClick);
             // 
             // titelDataGridViewTextBoxColumn3
             // 
