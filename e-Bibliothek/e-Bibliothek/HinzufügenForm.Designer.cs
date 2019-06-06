@@ -227,8 +227,6 @@
             // 
             // panelBuch
             // 
-            this.panelBuch.Controls.Add(this.panelDVD);
-            this.panelBuch.Controls.Add(this.panelZeitung);
             this.panelBuch.Controls.Add(this.btnBBAck);
             this.panelBuch.Controls.Add(this.label8);
             this.panelBuch.Controls.Add(this.label7);
@@ -241,9 +239,9 @@
             this.panelBuch.Controls.Add(this.textBoxBS);
             this.panelBuch.Controls.Add(this.textBoxBAutor);
             this.panelBuch.Controls.Add(this.btnBHinzufügen);
-            this.panelBuch.Location = new System.Drawing.Point(1, 0);
+            this.panelBuch.Location = new System.Drawing.Point(414, 10);
             this.panelBuch.Name = "panelBuch";
-            this.panelBuch.Size = new System.Drawing.Size(801, 451);
+            this.panelBuch.Size = new System.Drawing.Size(640, 451);
             this.panelBuch.TabIndex = 4;
             // 
             // panelDVD
@@ -258,9 +256,9 @@
             this.panelDVD.Controls.Add(this.label14);
             this.panelDVD.Controls.Add(this.buttonDH);
             this.panelDVD.Controls.Add(this.textBoxDT);
-            this.panelDVD.Location = new System.Drawing.Point(9, 0);
+            this.panelDVD.Location = new System.Drawing.Point(104, 31);
             this.panelDVD.Name = "panelDVD";
-            this.panelDVD.Size = new System.Drawing.Size(801, 451);
+            this.panelDVD.Size = new System.Drawing.Size(176, 430);
             this.panelDVD.TabIndex = 8;
             // 
             // btnDBack
@@ -361,9 +359,9 @@
             this.panelZeitung.Controls.Add(this.label3);
             this.panelZeitung.Controls.Add(this.textBoxZT);
             this.panelZeitung.Controls.Add(this.label2);
-            this.panelZeitung.Location = new System.Drawing.Point(4, 3);
+            this.panelZeitung.Location = new System.Drawing.Point(516, 13);
             this.panelZeitung.Name = "panelZeitung";
-            this.panelZeitung.Size = new System.Drawing.Size(797, 448);
+            this.panelZeitung.Size = new System.Drawing.Size(284, 448);
             this.panelZeitung.TabIndex = 5;
             // 
             // btnZBack
@@ -477,9 +475,9 @@
             this.panelKS.Controls.Add(this.textBoxKST);
             this.panelKS.Controls.Add(this.buttonKSH);
             this.panelKS.Controls.Add(this.label11);
-            this.panelKS.Location = new System.Drawing.Point(1, 3);
+            this.panelKS.Location = new System.Drawing.Point(233, 19);
             this.panelKS.Name = "panelKS";
-            this.panelKS.Size = new System.Drawing.Size(801, 448);
+            this.panelKS.Size = new System.Drawing.Size(175, 417);
             this.panelKS.TabIndex = 12;
             // 
             // btnBack
@@ -565,9 +563,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panelKS);
+            this.Controls.Add(this.panelDVD);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.panelKS);
             this.Controls.Add(this.panelBuch);
+            this.Controls.Add(this.panelZeitung);
             this.Controls.Add(this.btnDVD);
             this.Controls.Add(this.btnZeitung);
             this.Controls.Add(this.btnKS);

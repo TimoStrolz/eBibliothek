@@ -41,10 +41,10 @@ namespace e_Bibliothek
             {
                 scn.Open();
 
-                SqlCommand scmdB = new SqlCommand("UPDATE Bücher SET verfügbarkeit = @vbk AND benutzer=@name WHERE  titel=@ttl", scn);
-                SqlCommand scmdDVDs = new SqlCommand("UPDATE DVDs SET verfügbarkeit = @vbk AND benutzer=@name WHERE  titel=@ttl", scn);
-                SqlCommand scmdKS = new SqlCommand("UPDATE Konsolenspiele SET verfügbarkeit = @vbk AND benutzer=@name WHERE  titel=@ttl", scn);
-                SqlCommand scmdZ = new SqlCommand("UPDATE Zeitungen SET verfügbarkeit = @vbk AND benutzer=@name WHERE  titel=@ttl", scn);
+                SqlCommand scmdB = new SqlCommand("UPDATE Bücher SET verfügbarkeit = @vbk, benutzer=@name WHERE  titel=@ttl", scn);
+                SqlCommand scmdDVDs = new SqlCommand("UPDATE DVDs SET verfügbarkeit = @vbk, benutzer=@name WHERE  titel=@ttl", scn);
+                SqlCommand scmdKS = new SqlCommand("UPDATE Konsolenspiele SET verfügbarkeit = @vbk, benutzer=@name WHERE  titel=@ttl", scn);
+                SqlCommand scmdZ = new SqlCommand("UPDATE Zeitungen SET verfügbarkeit = @vbk, benutzer=@name WHERE  titel=@ttl", scn);
                 switch (comboBoxVerfügbarkeit.Text)
                 {
                     case "reserviert":
@@ -72,7 +72,7 @@ namespace e_Bibliothek
                     case "ausgeliehen":
                         SqlCommand bm = new SqlCommand("INSERT INTO BenutzerMedien(Benutzer, Gegenstand, Kategorie) VALUES(@name, @item, @category)", scn);
                         bm.Parameters.Clear();
-                        bm.Parameters.AddWithValue("@categor", comboBoxCgy.Text);
+                        bm.Parameters.AddWithValue("@category", comboBoxCgy.Text);
                         bm.Parameters.AddWithValue("@item", textBox1.Text);
                         bm.Parameters.AddWithValue("@name", lf.tBUserN.Text);
                         bm.ExecuteNonQuery();

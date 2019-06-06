@@ -32,15 +32,15 @@ namespace e_Bibliothek
                 SqlCommand scmdB = new SqlCommand("UPDATE Bücher SET verfügbarkeit = '1' AND benutzer=@name WHERE  titel=@ttl", scn);
                 SqlCommand vB = new SqlCommand("Select verfügbarkeit FROM Bücher WHERE  titel=@ttl", scn);
 
-                SqlCommand scmdKS = new SqlCommand("UPDATE konsolenspiele SET verfügbarkeit = '1' AND benutzer=@name WHERE  titel=@ttl", scn);
+                SqlCommand scmdKS = new SqlCommand("UPDATE konsolenspiele SET verfügbarkeit = '1', benutzer=@name WHERE  titel=@ttl", scn);
                 SqlCommand vKS = new SqlCommand("Select verfügbarkeit FROM konsolenspiele WHERE  titel=@ttl", scn);
                 SqlCommand aKS = new SqlCommand("select count(*) as cnt from konsolenspiele where mindestalter > @altr and titel=@ttl", scn);
 
-                SqlCommand scmdDVD = new SqlCommand("UPDATE DVDs SET verfügbarkeit = '1' AND benutzer=@name WHERE  titel=@ttl", scn);
+                SqlCommand scmdDVD = new SqlCommand("UPDATE DVDs SET verfügbarkeit = '1', benutzer=@name WHERE  titel=@ttl", scn);
                 SqlCommand vDVD = new SqlCommand("Select verfügbarkeit FROM DVDs WHERE  titel=@ttl", scn);
                 SqlCommand aDVD = new SqlCommand("select count(*) as cnt from DVDs where mindestalter > @altr and titel=@ttl", scn);
 
-                SqlCommand scmdZ = new SqlCommand("UPDATE Zeitungen SET verfügbarkeit = '1' AND benutzer=@name WHERE  titel=@ttl", scn);
+                SqlCommand scmdZ = new SqlCommand("UPDATE Zeitungen SET verfügbarkeit = '1' , benutzer=@name WHERE  titel=@ttl", scn);
                 SqlCommand vZ = new SqlCommand("Select verfügbarkeit FROM Zeitungen WHERE  titel=@ttl", scn);
 
                 SqlCommand scmda = new SqlCommand("select BDate from Benutzer where BenutzerName=@usr", scn);

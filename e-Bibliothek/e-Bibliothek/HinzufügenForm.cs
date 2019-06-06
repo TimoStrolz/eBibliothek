@@ -30,22 +30,39 @@ namespace e_Bibliothek
 
         private void btnBuch_Click(object sender, EventArgs e)
         {
+            panelBuch.Hide();
+            panelZeitung.Hide();
+            panelKS.Hide();
+            panelDVD.Hide();
             panelBuch.Show();
         }
 
         private void btnKS_Click(object sender, EventArgs e)
         {
+            panelBuch.Hide();
+            panelZeitung.Hide();
+            panelKS.Hide();
+            panelDVD.Hide();
             panelKS.Show();
         }
 
         private void btnZeitung_Click(object sender, EventArgs e)
         {
+            panelBuch.Hide();
+            panelZeitung.Hide();
+            panelKS.Hide();
+            panelDVD.Hide();
             panelZeitung.Show();
+
         }
 
         private void btnDVD_Click(object sender, EventArgs e)
         {
-            panelZeitung.Show();
+            panelBuch.Hide();
+            panelZeitung.Hide();
+            panelKS.Hide();
+            panelDVD.Hide();
+            panelDVD.Show();
         }
 
         private void btnBHinzufügen_Click(object sender, EventArgs e)

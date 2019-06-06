@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="e-Bibliothek.exe" size="173536">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="e-Bibliothek.exe" size="190944">
       <assemblyIdentity name="e-Bibliothek" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KHCX6uV4obFPcLBT95M/XrrdK3gltr5h3JvOLrYcgdM=</dsig:DigestValue>
+        <dsig:DigestValue>l+MiVVjQwE0XbUsHbaw1Um052PWtu1PJuC5usFTVFt4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -59,7 +59,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>tvTQzpVLycUCfJNX6F91r5AGiOhcNYxH0fe7Ws9ZFA4=</dsig:DigestValue>
+      <dsig:DigestValue>ShQ98H633jO+Avajx5d/mEWIYM1/UzLn0/MxDuvQfYo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Database1_log.ldf" size="8388608" writeableType="applicationData">
@@ -68,7 +68,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>bB3CbqnBudmgUBoNkxzVgZ/ezimn5GK/ktUDOGNX0Zk=</dsig:DigestValue>
+      <dsig:DigestValue>P2JakN8I5gYPz8WbQN6OSNhK8DtElTx8rVlrJ9DG+tc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="e-Bibliothek.exe.config" size="557">
