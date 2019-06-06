@@ -44,40 +44,33 @@
             // tBEmail
             // 
             this.tBEmail.Location = new System.Drawing.Point(12, 38);
-            this.tBEmail.Location = new System.Drawing.Point(8, 25);
-            this.tBEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tBEmail.Name = "tBEmail";
-            this.tBEmail.Size = new System.Drawing.Size(68, 20);
+            this.tBEmail.Size = new System.Drawing.Size(100, 26);
             this.tBEmail.TabIndex = 6;
             this.tBEmail.TextChanged += new System.EventHandler(this.tBEmail_TextChanged);
             // 
             // tBPasswort1
             // 
             this.tBPasswort1.Location = new System.Drawing.Point(12, 117);
-            this.tBPasswort1.Location = new System.Drawing.Point(8, 76);
-            this.tBPasswort1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tBPasswort1.Name = "tBPasswort1";
             this.tBPasswort1.PasswordChar = '*';
-            this.tBPasswort1.Size = new System.Drawing.Size(68, 20);
+            this.tBPasswort1.Size = new System.Drawing.Size(100, 26);
             this.tBPasswort1.TabIndex = 1;
             // 
             // tBPasswort2
             // 
             this.tBPasswort2.Location = new System.Drawing.Point(12, 194);
-            this.tBPasswort2.Location = new System.Drawing.Point(8, 126);
-            this.tBPasswort2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tBPasswort2.Name = "tBPasswort2";
             this.tBPasswort2.PasswordChar = '*';
-            this.tBPasswort2.Size = new System.Drawing.Size(68, 20);
+            this.tBPasswort2.Size = new System.Drawing.Size(100, 26);
             this.tBPasswort2.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 6);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.Size = new System.Drawing.Size(112, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Email-Adresse";
             // 
@@ -85,10 +78,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(8, 169);
-            this.label2.Location = new System.Drawing.Point(5, 110);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 13);
+            this.label2.Size = new System.Drawing.Size(153, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Passwort bestätigen";
             // 
@@ -96,20 +87,16 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(8, 92);
-            this.label3.Location = new System.Drawing.Point(5, 60);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 13);
+            this.label3.Size = new System.Drawing.Size(144, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Passwort eingeben";
             // 
             // bWeiter
             // 
             this.bWeiter.Location = new System.Drawing.Point(12, 251);
-            this.bWeiter.Location = new System.Drawing.Point(8, 163);
-            this.bWeiter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bWeiter.Name = "bWeiter";
-            this.bWeiter.Size = new System.Drawing.Size(50, 25);
+            this.bWeiter.Size = new System.Drawing.Size(75, 38);
             this.bWeiter.TabIndex = 7;
             this.bWeiter.Text = "weiter";
             this.bWeiter.UseVisualStyleBackColor = true;
@@ -119,10 +106,8 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(218, 92);
-            this.label4.Location = new System.Drawing.Point(145, 60);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 13);
+            this.label4.Size = new System.Drawing.Size(68, 20);
             this.label4.TabIndex = 9;
             this.label4.Text = "Adresse";
             // 
@@ -130,12 +115,7 @@
             // 
             this.tBAdresse.Location = new System.Drawing.Point(222, 117);
             this.tBAdresse.Name = "tBAdresse";
-            this.tBAdresse.Size = new System.Drawing.Size(200, 26);
-            this.tBAdresse.Location = new System.Drawing.Point(148, 76);
-            this.tBAdresse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tBAdresse.Name = "tBAdresse";
-            this.tBAdresse.PasswordChar = '*';
-            this.tBAdresse.Size = new System.Drawing.Size(68, 20);
+            this.tBAdresse.Size = new System.Drawing.Size(100, 26);
             this.tBAdresse.TabIndex = 8;
             this.tBAdresse.TextChanged += new System.EventHandler(this.tBAdresse_TextChanged);
             // 
@@ -143,29 +123,24 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(218, 169);
-            this.label5.Location = new System.Drawing.Point(145, 110);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 13);
+            this.label5.Size = new System.Drawing.Size(112, 20);
             this.label5.TabIndex = 11;
             this.label5.Text = "Geburtsdatum";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(222, 194);
-            this.dateTimePicker1.Location = new System.Drawing.Point(148, 126);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(135, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
             this.dateTimePicker1.TabIndex = 12;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // Registration
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(496, 342);
-            this.ClientSize = new System.Drawing.Size(331, 222);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -177,7 +152,6 @@
             this.Controls.Add(this.tBPasswort2);
             this.Controls.Add(this.tBPasswort1);
             this.Controls.Add(this.tBEmail);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Registration";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
