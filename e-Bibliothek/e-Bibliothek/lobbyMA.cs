@@ -41,5 +41,12 @@ namespace e_Bibliothek
             KatalogForm kf = new KatalogForm();
             kf.Show();
         }
+
+        private void btnBD_Click(object sender, EventArgs e)
+        {
+            BenutzerForm bf = new BenutzerForm();
+            bf.Show();
+            this.Hide();
+        }
     }
 }

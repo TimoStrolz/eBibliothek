@@ -150,5 +150,12 @@ namespace e_Bibliothek
         {
             panelDVD.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lobbyMA lma = new lobbyMA();
+            lma.Show();
+            this.Hide();
+        }
     }
 }

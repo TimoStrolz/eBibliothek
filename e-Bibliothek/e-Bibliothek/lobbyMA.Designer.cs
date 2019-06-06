@@ -31,6 +31,7 @@
             this.btnKatalog = new System.Windows.Forms.Button();
             this.btnHinzufügen = new System.Windows.Forms.Button();
             this.btnVerfügbarkeit = new System.Windows.Forms.Button();
+            this.btnBD = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnKatalog
@@ -63,11 +64,22 @@
             this.btnVerfügbarkeit.UseVisualStyleBackColor = true;
             this.btnVerfügbarkeit.Click += new System.EventHandler(this.btnVerfügbarkeit_Click);
             // 
+            // btnBD
+            // 
+            this.btnBD.Location = new System.Drawing.Point(13, 172);
+            this.btnBD.Name = "btnBD";
+            this.btnBD.Size = new System.Drawing.Size(183, 49);
+            this.btnBD.TabIndex = 4;
+            this.btnBD.Text = "Benutzerdaten ansehen";
+            this.btnBD.UseVisualStyleBackColor = true;
+            this.btnBD.Click += new System.EventHandler(this.btnBD_Click);
+            // 
             // lobbyMA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBD);
             this.Controls.Add(this.btnVerfügbarkeit);
             this.Controls.Add(this.btnHinzufügen);
             this.Controls.Add(this.btnKatalog);
@@ -83,5 +95,6 @@
         private System.Windows.Forms.Button btnKatalog;
         private System.Windows.Forms.Button btnHinzufügen;
         private System.Windows.Forms.Button btnVerfügbarkeit;
+        private System.Windows.Forms.Button btnBD;
     }
 }
