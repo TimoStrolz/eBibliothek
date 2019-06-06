@@ -38,3 +38,7 @@ C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e-B
 C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.VerfügbarkeitsForm.resources
 C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.HinzufügenForm.resources
 C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e_Bibliothek.BenutzerForm.resources
+C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\bin\Debug\e-Bibliothek.exe.manifest
+C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\bin\Debug\e-Bibliothek.application
+C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.exe.manifest
+C:\Users\timos\Source\Repos\eBibliothek2\e-Bibliothek\e-Bibliothek\obj\Debug\e-Bibliothek.application
